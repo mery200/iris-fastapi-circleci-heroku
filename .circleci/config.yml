@@ -94,7 +94,7 @@ workflows:
           requires:
             - lint
             - test
-          app-name: "${APP_PREFIX}-staging"
+          app-name: "iris-fastapi-staging-boukhars"
           filters:
             branches:
               only: staging # Only run this build and deploy for staging branch.
@@ -104,7 +104,7 @@ workflows:
           requires:
             - lint
             - test
-          app-name: "${APP_PREFIX}-production"
+          app-name: "iris-fastapi-boukhars"
           filters:
             branches:
               only: master # Only run this build and deploy for master branch.
